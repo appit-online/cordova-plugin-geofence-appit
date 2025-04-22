@@ -20,7 +20,8 @@ Check out our example applications:
 
 From master
 ```
-cordova plugin add https://github.com/appit-online/cordova-plugin-geofence-appit
+cordova plugin add github:appit-online/cordova-plugin-geofence-appit.git --variable GEOFENCE_IN_USE_USAGE_DESCRIPTION="We use your location to display.... them while the app is in use." --variable GEOFENCE_ALWAYS_USAGE_DESCRIPTION="We need your location even in the background to alert you when ..."
+
 ```
 
 Latest stable version
