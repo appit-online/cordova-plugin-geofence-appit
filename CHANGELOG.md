@@ -1,4 +1,4 @@
-## [1.2.0] - 2025-04-21
+## [1.0.0] - 2025-04-21
 
 ### Added
 - iOS: Location permission is now automatically requested on plugin initialization instead of app init.
