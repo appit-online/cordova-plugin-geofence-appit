@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-geofence-appit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova geofence plugin",
   "cordova": {
     "id": "cordova-plugin-geofence-appit",
@@ -11,6 +11,10 @@
       "windows8",
       "windows"
     ]
+  },
+  "funding": {
+    "url": "https://paypal.me/dave7117",
+    "type": "paypal"
   },
   "scripts": {
     "test:ios": "FIX_PARAMEDIC=true cordova-paramedic --platform ios --plugin . --verbose",
