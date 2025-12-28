@@ -37,7 +37,7 @@ public class GeoNotification {
             .setTransitionTypes(transitionType)
             .setCircularRegion(latitude, longitude, radius)
             .setLoiteringDelay(loiteringDelay == 0 ? 60 * 60 * 1000 : loiteringDelay)
-            .setExpirationDuration(Long.MAX_VALUE).build();
+            .setExpirationDuration(30 * 24 * 60 * 60 * 1000).build();
     }
 
     public String toJson() {
@@ -92,10 +92,8 @@ public class GeoNotification {
                 return "Enter";
             case 2:
                 return "Exit";
-            /*
             case 3:
                 return "Both";
-            */
             case 4:
                 return "Dwell";
             default:

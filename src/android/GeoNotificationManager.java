@@ -15,7 +15,6 @@ import org.apache.cordova.CallbackContext;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.appit.cordova.geofence.AddGeofenceCommand.INITIAL_TRIGGER_NONE;
 
 public class GeoNotificationManager {
     private Context context;
@@ -47,7 +46,7 @@ public class GeoNotificationManager {
         }
         if (!geoFences.isEmpty()) {
             googleServiceCommandExecutor.QueueToExecute(
-                new AddGeofenceCommand(context, pendingIntent, geoFences, INITIAL_TRIGGER_NONE)
+                new AddGeofenceCommand(context, pendingIntent, geoFences, GeofencingRequest.INITIAL_TRIGGER_ENTER)
             );
         }
     }
