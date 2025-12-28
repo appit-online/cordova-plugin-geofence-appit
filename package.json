@@ -52,6 +52,6 @@
   "typings": "./typings/cordova-plugin-geofence.d.ts",
   "devDependencies": {
     "cordova": "^6.1.1",
-    "cordova-paramedic": "https://github.com/apache/cordova-paramedic"
+    "cordova-paramedic": "git+https://github.com/apache/cordova-paramedic.git"
   }
 }
